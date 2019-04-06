@@ -44,6 +44,10 @@ li a:hover {
 .contato {
 	padding:20px;
 }
+.map {
+	float: right;
+	padding-right:5px;
+}
 .left {
 	/*text-align: left;*/
 }
@@ -56,6 +60,36 @@ li a:hover {
 	color: #fff;
 	border-radius: 10px;
 }
-@media only screen and (max-device-width: 600px) {
+#menuCel{
+	display: none;
+}
+@media only screen and (max-device-width: 800px) {
+	.total {
+		width: 100%;
+	}
+	.header h2{
+		display: none;
+	}
+	.header img{
+		padding: 10px;
+		float:none;
+	}
+	ul li{
+		width: 100%;
+		height: auto;
+		position: relative;
+		text-align: center;
+		float: none;
+	}
+	li{
+		display: none;
+	}
+	li a:hover {
+		background-color: #333;
+	}
+	#menuCel{
+		display: block;
+		font-size: 25px;
+	}
 	
 }

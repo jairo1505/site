@@ -7,7 +7,8 @@ function inicio(){
 	document.getElementById("MenuContato").className = "";
 	document.getElementById("MenuSuporte").className = "";
 	result.innerHTML = "<div id=\"inicio\">";
-	result.innerHTML += "<h1>Bem Vindo</h1>";
+	result.innerHTML += "<h1>Bem Vindo à</h1><br/>";
+	result.innerHTML += "<img src=\"img/JTEL-logo.png\" alt=\"Logo Jaraguá Telecomunicações\" width=\"95%\"/><br/><br/>";
 	result.innerHTML += "</div>";
 }
 function galeria(){
@@ -65,7 +66,7 @@ function suporte(){
 var i = 0;
 function show(){
 	var largura = window.innerWidth;
-	if (largura < 600) {
+	if (largura < 800) {
 		if(i%2==0){
 			document.getElementById('menu1').style.display='block';
 			document.getElementById('menu2').style.display='block';
