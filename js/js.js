@@ -85,8 +85,7 @@ function suporte(){
 }
 var i = 0;
 function show(){
-	var largura = window.innerWidth;
-	if (largura < 800) {
+	if (window.innerWidth <= 800) {
 		if(i%2==0){
 			document.getElementById('menu1').style.display='block';
 			document.getElementById('menu2').style.display='block';
@@ -105,5 +104,27 @@ function show(){
 		i++;
 	}
 }
+
+window.addEventListener("resize", resizeScreen);
+
+function resizeScreen() {
+	if (window.innerWidth > 800) {
+		document.getElementById('menu1').style.display='block';
+		document.getElementById('menu2').style.display='block';
+		document.getElementById('menu3').style.display='block';
+		document.getElementById('menu4').style.display='block';
+		//document.getElementById('menu5').style.display='block';
+		document.getElementById('menu6').style.display='block';
+	} else {
+		document.getElementById('menu1').style.display='none';
+		document.getElementById('menu2').style.display='none';
+		document.getElementById('menu3').style.display='none';
+		document.getElementById('menu4').style.display='none';
+		//document.getElementById('menu5').style.display='none';
+		document.getElementById('menu6').style.display='none';
+		i=0;
+	}
+}
+
 contato();
 show();
